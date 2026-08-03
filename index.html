@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pallet Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="login-screen">
+    <h2>Pallet Tracker Login</h2>
+    <input id="password-input" type="password" placeholder="Enter password">
+    <button id="login-btn">Login</button>
+    <div id="login-error"></div>
+</div>
+
+<div id="app-screen" style="display:none;">
+    <h1>Pallet Tracker</h1>
+
+    <input type="file" id="file-input">
+    <button id="import-btn">Import Workbook</button>
+
+    <h2>Pallets</h2>
+    <table id="pallet-table"></table>
+
+    <h2>Holds</h2>
+    <table id="hold-table"></table>
+
+    <h2>Expiring Soon</h2>
+    <table id="expire-table"></table>
+
+    <h2>History</h2>
+    <table id="history-table"></table>
+</div>
+
+<script src="config.js"></script>
+<script src="pallet-logic.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
