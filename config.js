@@ -1,7 +1,6 @@
-module.exports = {
-  "encryptedToken": {
-    "salt": [
-      181,
+window.PALLET_TRACKER_CONFIG = {
+    encryptedToken: {
+        salt: [181,
       78,
       53,
       166,
@@ -16,10 +15,8 @@ module.exports = {
       137,
       46,
       72,
-      159
-    ],
-    "iv": [
-      23,
+      159],   // your actual values
+        iv: [ 23,
       2,
       159,
       67,
@@ -30,10 +27,8 @@ module.exports = {
       1,
       8,
       133,
-      29
-    ],
-    "data": [
-      100,
+      29],
+        data: [  100,
       9,
       226,
       169,
@@ -48,7 +43,6 @@ module.exports = {
       164,
       40,
       87,
-      88
-    ]
-  }
+      88]
+    }
 };
