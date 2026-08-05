@@ -45,7 +45,7 @@ async function decrypt(enc, password) {
 
 // GitHub API read/write
 async function githubWrite(path, content, token) {
-    const url = `https://api.github.com/repos/judeweidner/pallet-tracker/contents/${path}`;
+    const url = `https://api.github.com/repos/Jude/pallet-tracker/contents/${path}`;
 
     // get current file SHA
     const existing = await fetch(url).then(r => r.json());
@@ -68,7 +68,7 @@ async function githubWrite(path, content, token) {
 }
 
 async function githubRead(path, token) {
-    const url = `https://api.github.com/repos/judeweidner/pallet-tracker/contents/${path}`;
+    const url = `https://api.github.com/repos/Jude/pallet-tracker/contents/${path}`;
     const res = await fetch(url, {
         headers: { "Authorization": `Bearer ${token}` }
     }).then(r => r.json());
